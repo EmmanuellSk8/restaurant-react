@@ -1,0 +1,156 @@
+@import "tailwindcss";
+
+:root {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+color: aliceblue
+}
+
+#menu {
+  background: #ffebfe;
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+
+.titles {
+  font-family: 'Caveat Variable', cursive;
+}
+
+.txt-postHero {
+  font-family: 'Caveat Variable', cursive;
+}
+
+.btns-hero {
+  font-family: 'Shrikhand', system-ui;
+}
+
+#Hero {
+  font-family: 'Shrikhand', system-ui;
+  font-weight: 800;
+  margin-bottom: 22rem;
+}
+
+@media screen and (max-width:1227px) {
+  #Hero {
+    margin-left: 10rem;
+  }
+}
+
+@media screen and (max-width:900px) {
+  #Hero {
+    margin-left: 5rem;
+  }
+}
+
+@media screen and (max-width:790px) {
+  #Hero {
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (max-width:630px) {
+  input {
+    width: 100%;
+    margin-inline: 1rem;
+
+  }
+}
+
+input::placeholder {
+  color: orange;
+  font-weight: 700;
+}
+
+input {
+  font-weight: 700;
+  /* color: rgb(36, 35, 35); */
+  color: black;
+}
+
+input:hover {
+  box-shadow: 1px 1px 5px 1px rgb(11, 11, 11);
+  /* border: 2px orange solid; */
+  color: orange;
+}
+
+input[type="datetime-local"] {
+  color: orange;
+  font-weight: 700;
+  justify-content: space-between;
+}
+
+input[type="datatime-local"]:hover {
+  box-shadow: 0 1px 10px 1px rgb(255, 111, 0);
+  border: 2px orange solid;
+  color: orange;
+}
+
+input:focus{
+  border: 4px orange solid;
+  outline: orange;
+}
+
+@media screen and (max-width:670px) {
+  #Hero #bigImg {
+    margin-top: 2rem;
+    width: 300px;
+  }
+
+  #Hero #bgImgsHero {
+    width: 400px;
+  }
+
+  #Hero #bgImgsHero {
+    width: 400px;
+  }
+
+  #textHero,
+  #postHero {
+    margin-inline: 1rem;
+  }
+
+  #Hero {
+    margin-bottom: 10rem;
+  }
+}
+
+@media screen and (max-width:460px) {
+  #container-imgs-hero {
+    margin-top: 4rem;
+    display: grid;
+  }
+
+  #bgImgsHero {
+    display: none;
+  }
+
+  #postHero {
+    width: 300px;
+    gap: 5rem;
+  }
+
+
+  #postHero img {
+    max-width: 280px;
+  }
+
+  #postHero .postheroimg2 {
+    height: 280px;
+  }
+
+  #Hero {
+    margin-left: .5rem;
+  }
+
+}
+
+@media screen and (max-width:980px) {
+
+  #postHero .first-container,
+  #postHero .second-container {
+    flex-direction: column;
+  }
+
+}
