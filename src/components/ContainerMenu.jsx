@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+  import React, { useState } from 'react';
 import { Link, Routes, Route } from 'react-router-dom';
 import PreMenu from './PreMenu';
 import Menu from './Menu';
@@ -17,9 +17,7 @@ export default function ContainerMenu() {
 
         <>
 
-
-
-                <div className="flex justify-around px-20 gap-10 mt-40 flex-wrap mr-3 w-full">
+                <div id='Menu' className="flex justify-around px-20 gap-10 mt-40 flex-wrap mr-3 w-full">
                     <div className="flex flex-wrap justify-between w-[1600px] gap-4">
 
                         <h2 className='text-3xl font-semibold titles'>Menú</h2>

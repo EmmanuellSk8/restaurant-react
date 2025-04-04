@@ -3,7 +3,10 @@
 :root {
   scroll-behavior: smooth;
   overflow-x: hidden;
-color: aliceblue
+}
+
+body{
+  transition: 700ms ;
 }
 
 #menu {
@@ -11,6 +14,45 @@ color: aliceblue
   width: 100%;
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.txt-transparent-hero{
+  -webkit-text-stroke-width:2.4px ;
+  -webkit-text-stroke-color: black ;
+}
+
+
+@media screen and (max-width:342px) {
+  .container-btns-reservation{
+    justify-content: center;
+  }
+  
+}
+
+@media screen and (max-width:440px) {
+  .container-btns-delete{
+    width: 100%;
+    justify-content: center;
+  }
+
+  #ModalDelete p{
+    width: 100%;
+  }
+
+  #ModalDelete {
+    width: 100%;
+  }
+
+}
+
+.btns-hero.menu:hover svg{
+  rotate: 90deg;
+  transform: scale(1.2);
+}
+
+.btns-hero.reservar:hover svg{
+  rotate: -45deg;
+  transform: scale(1.2);
 }
 
 

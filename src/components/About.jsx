@@ -5,7 +5,7 @@ export default function About() {
     return (
         <>
 
-            <section className="mt-36 w-full justify-around flex flex-wrap mx-10">
+            <section id="About" className="mt-36 w-full justify-around flex flex-wrap mx-10">
                 <div className="w-[1600px]">
 
 

@@ -1,20 +1,13 @@
-import React, { useState } from 'react';
-import { Link, Routes, Route } from 'react-router-dom';
+import React from 'react';
 import Hero from './components/Hero';
 import PostHero from './components/PostHero';
-import PreMenu from './components/PreMenu';
-import Menu from './components/Menu';
 import './index.css';
 import About from './components/About';
 import ContainerMenu from './components/ContainerMenu';
-import Reservation from './components/Reservation';
+import Footer from './components/Footer';
+
 
 function App() {
-  const [isMenuVisible, setIsMenuVisible] = useState(true);
-
-  const toggleMenu = () => {
-    setIsMenuVisible(prev => !prev);
-  };
 
   return (
     <section className='w-full justify-center items-center flex flex-col'>
@@ -24,8 +17,10 @@ function App() {
         <PostHero />
         <ContainerMenu/>
         <About />
-        <Reservation/>
+        <Footer/>
     </section>
+
+
   );
 }
 
