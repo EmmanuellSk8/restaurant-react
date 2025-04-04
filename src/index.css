@@ -45,7 +45,6 @@ body{
 
 }
 
-
 .btns-hero.menu:hover svg{
   rotate: 90deg;
   transform: scale(1.2);
@@ -99,6 +98,14 @@ body{
     margin-inline: 1rem;
 
   }
+}
+
+
+@media screen and (max-width:1170px) {
+  .header{
+  column-gap: 4rem;
+  }
+  
 }
 
 input::placeholder {

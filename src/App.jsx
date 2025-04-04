@@ -5,6 +5,7 @@ import './index.css';
 import About from './components/About';
 import ContainerMenu from './components/ContainerMenu';
 import Footer from './components/Footer';
+import Header from './components/Header';
 
 
 function App() {
@@ -12,12 +13,13 @@ function App() {
   return (
     <section className='w-full justify-center items-center flex flex-col'>
 
-
+        <Header/>
         <Hero />
         <PostHero />
         <ContainerMenu/>
         <About />
         <Footer/>
+        
     </section>
 
 
