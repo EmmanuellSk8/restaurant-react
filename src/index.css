@@ -45,6 +45,7 @@ body{
 
 }
 
+
 .btns-hero.menu:hover svg{
   rotate: 90deg;
   transform: scale(1.2);
