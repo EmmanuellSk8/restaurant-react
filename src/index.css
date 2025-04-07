@@ -5,37 +5,30 @@
   overflow-x: hidden;
 }
 
-body{
-  transition: 700ms ;
+body {
+  transition: 700ms;
 }
 
-#menu {
-  background: #ffebfe;
-  width: 100%;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-.txt-transparent-hero{
-  -webkit-text-stroke-width:2.4px ;
-  -webkit-text-stroke-color: black ;
+.txt-transparent-hero {
+  -webkit-text-stroke-width: 2.4px;
+  -webkit-text-stroke-color: black;
 }
 
 
 @media screen and (max-width:342px) {
-  .container-btns-reservation{
+  .container-btns-reservation {
     justify-content: center;
   }
-  
+
 }
 
 @media screen and (max-width:440px) {
-  .container-btns-delete{
+  .container-btns-delete {
     width: 100%;
     justify-content: center;
   }
 
-  #ModalDelete p{
+  #ModalDelete p {
     width: 100%;
   }
 
@@ -45,12 +38,63 @@ body{
 
 }
 
-.btns-hero.menu:hover svg{
+/* @keyframes menuMobile {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+} */
+
+@keyframes menuMobile {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+
+}
+
+@keyframes fade {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+
+}
+
+
+#menuMobile {
+  animation: menuMobile 0.9s ease-in-out;
+  display: none;
+}
+
+
+@media screen and (max-width: 900px) {
+  #menuMobile {
+    display: flex;
+   
+  }
+
+  #menu {
+    display: none;
+  }
+  
+}
+
+.btns-hero.menu:hover .svg {
   rotate: 90deg;
   transform: scale(1.2);
 }
 
-.btns-hero.reservar:hover svg{
+.btns-hero.reservar:hover .svg {
   rotate: -45deg;
   transform: scale(1.2);
 }
@@ -100,12 +144,10 @@ body{
   }
 }
 
-
 @media screen and (max-width:1170px) {
-  .header{
-  column-gap: 4rem;
+  .header {
+    column-gap: 4rem;
   }
-  
 }
 
 input::placeholder {
@@ -137,7 +179,7 @@ input[type="datatime-local"]:hover {
   color: orange;
 }
 
-input:focus{
+input:focus {
   border: 4px orange solid;
   outline: orange;
 }

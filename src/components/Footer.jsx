@@ -15,16 +15,16 @@ export default function Footer() {
                         </a>
                         <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 gap-2">
                             <li>
-                                <a href="#Hero" class="hover:underline me-4 md:me-6">Inicio</a>
+                                <a href="#Hero" class="hover:text-orange-400 hover:scale-110 duration-200 ease-in-out me-4 md:me-6">Inicio</a>
                             </li>
                             <li>
-                                <a href="#Menu" class="hover:underline me-4 md:me-6">Menú</a>
+                                <a href="#Menu" class="hover:text-orange-400 hover:scale-110 duration-200 ease-in-out me-4 md:me-6">Menú</a>
                             </li>
                             <li>
-                                <a href="#" class="hover:underline me-4 md:me-6">Reservar</a>
+                                <a href="#" class="hover:text-orange-400 hover:scale-110 duration-200 ease-in-out me-4 md:me-6">Reservar</a>
                             </li>
                             <li>
-                                <a href="#About" class="hover:underline me-4 md:me-6">Acerca de nosotros</a>
+                                <a href="#About" class="hover:text-orange-400 hover:scale-110 duration-200 ease-in-out me-4 md:me-6">Acerca de nosotros</a>
                             </li>
 
                         </ul>

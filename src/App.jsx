@@ -6,6 +6,10 @@ import About from './components/About';
 import ContainerMenu from './components/ContainerMenu';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import CreateReservation from './components/CreateReservation';
+import GetReservation from './components/GetReservation';
+import UpdateReservation from './components/UpdateReservation';
+import DeleteReservation from './components/DeleteReservation';
 
 
 function App() {
@@ -19,7 +23,7 @@ function App() {
         <ContainerMenu/>
         <About />
         <Footer/>
-        
+
     </section>
 
 
