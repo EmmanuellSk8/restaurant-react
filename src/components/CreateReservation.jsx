@@ -2,7 +2,7 @@ export default function CreateReservation() {
 
     return (
         <>
-            <section className="mb-96 flex flex-col gap-10 mt-40 justify-around">
+            <section className="flex flex-col gap-10 mt-40 justify-around">
                 <h2 className="titles text-4xl font-semibold text-center">Reservar</h2>
 
                 <div className="flex gap-2 flex-col">

@@ -1,29 +1,27 @@
 import React from 'react';
-import Hero from './components/Hero';
-import PostHero from './components/PostHero';
-import './index.css';
-import About from './components/About';
-import ContainerMenu from './components/ContainerMenu';
-import Footer from './components/Footer';
+import { useLocation } from 'react-router-dom';
 import Header from './components/Header';
-import CreateReservation from './components/CreateReservation';
-import GetReservation from './components/GetReservation';
-import UpdateReservation from './components/UpdateReservation';
-import DeleteReservation from './components/DeleteReservation';
+import ContainerHomePage from './components/ContainerHomePage';
+import ContainerReservation from './components/ContainerReservation';
+import ReservationHeader from './components/HeaderReservation';
+import { Link, Route, Routes } from "react-router-dom";
 
 
 function App() {
 
+  const location = useLocation();
+  const isReservationsPath = location.pathname.startsWith("/Reservations")
+
   return (
     <section className='w-full justify-center items-center flex flex-col'>
 
-        <Header/>
-        <Hero />
-        <PostHero />
-        <ContainerMenu/>
-        <About />
-        <Footer/>
+      {!isReservationsPath ? <Header /> : <ReservationHeader />}
 
+      {/* Todas las rutas en un solo lugar */}
+      <Routes>
+        <Route path="/" element={<ContainerHomePage />} />
+        <Route path="/Reservations/*" element={<ContainerReservation />} />
+      </Routes>
     </section>
 
 

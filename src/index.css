@@ -38,16 +38,6 @@ body {
 
 }
 
-/* @keyframes menuMobile {
-  0% {
-    transform: translateX(-100%);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-} */
-
 @keyframes menuMobile {
   0% {
     transform: translateY(-100%);
@@ -59,23 +49,26 @@ body {
 
 }
 
-@keyframes fade {
-  0% {
-    transform: translateX(-100%);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-
-}
-
 
 #menuMobile {
   animation: menuMobile 0.9s ease-in-out;
   display: none;
 }
 
+#menuMobileReservations{
+  animation: menuMobile 0.9s ease-in-out;
+  display: none;
+}
+
+@media screen and (max-width:1056px) {
+  #menuMobileReservations{
+    display: flex;
+  } 
+
+  #menuReservations{
+    display: none;
+  }
+}
 
 @media screen and (max-width: 900px) {
   #menuMobile {
@@ -87,6 +80,14 @@ body {
     display: none;
   }
   
+}
+
+
+@media screen and (max-width: 1440px) {
+  .headerReservation {
+    column-gap: 4rem;
+  }
+ 
 }
 
 .btns-hero.menu:hover .svg {
