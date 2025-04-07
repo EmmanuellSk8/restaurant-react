@@ -9,63 +9,9 @@ body{
   transition: 700ms ;
 }
 
-#menu {
-  background: #ffebfe;
-  width: 100%;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
 .txt-transparent-hero{
   -webkit-text-stroke-width:2.4px ;
   -webkit-text-stroke-color: black ;
-}
-
-
-@media screen and (max-width:342px) {
-  .container-btns-reservation{
-    justify-content: center;
-  }
-  
-}
-
-@media screen and (max-width:440px) {
-  .container-btns-delete{
-    width: 100%;
-    justify-content: center;
-  }
-
-  #ModalDelete p{
-    width: 100%;
-  }
-
-  #ModalDelete {
-    width: 100%;
-  }
-
-}
-
-.btns-hero.menu:hover svg{
-  rotate: 90deg;
-  transform: scale(1.2);
-}
-
-.btns-hero.reservar:hover svg{
-  rotate: -45deg;
-  transform: scale(1.2);
-}
-
-
-.titles {
-  font-family: 'Caveat Variable', cursive;
-}
-
-.txt-postHero {
-  font-family: 'Caveat Variable', cursive;
-}
-
-.btns-hero {
-  font-family: 'Shrikhand', system-ui;
 }
 
 #Hero {
@@ -90,48 +36,6 @@ body{
   #Hero {
     margin-left: 2rem;
   }
-}
-
-@media screen and (max-width:630px) {
-  input {
-    width: 100%;
-    margin-inline: 1rem;
-
-  }
-}
-
-input::placeholder {
-  color: orange;
-  font-weight: 700;
-}
-
-input {
-  font-weight: 700;
-  /* color: rgb(36, 35, 35); */
-  color: black;
-}
-
-input:hover {
-  box-shadow: 1px 1px 5px 1px rgb(11, 11, 11);
-  /* border: 2px orange solid; */
-  color: orange;
-}
-
-input[type="datetime-local"] {
-  color: orange;
-  font-weight: 700;
-  justify-content: space-between;
-}
-
-input[type="datatime-local"]:hover {
-  box-shadow: 0 1px 10px 1px rgb(255, 111, 0);
-  border: 2px orange solid;
-  color: orange;
-}
-
-input:focus{
-  border: 4px orange solid;
-  outline: orange;
 }
 
 @media screen and (max-width:670px) {
